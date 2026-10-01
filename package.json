@@ -1,0 +1,15 @@
+{
+  "name": "school-buffet-reservation",
+  "version": "1.0.0",
+  "private": true,
+  "description": "رزرو ساندویچ بوفه مدرسه کارآفرینان و پویندگان",
+  "main": "server.js",
+  "engines": { "node": ">=18" },
+  "scripts": { "start": "node server.js" },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "helmet": "^7.1.0"
+  }
+}

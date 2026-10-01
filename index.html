@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>بوفه کارآفرینان و پویندگان | رزرو ساندویچ</title>
+<meta name="description" content="ساندویچت رو از قبل رزرو کن و بدون معطلی تحویل بگیر.">
+<meta name="theme-color" content="#120f2e">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;800&display=swap">
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<svg class="sprite" aria-hidden="true">
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></symbol>
+  <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4l9 16H3z"/><path d="M12 10v4M12 17.5v.01"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.6 3.2-5.5 6.5-5.5s5.9 1.9 6.5 5.5M16 4.8a3.5 3.5 0 010 6.4M18 14.8c2 .7 3.2 2.4 3.5 5.2"/></symbol>
+  <symbol id="i-telegram" viewBox="0 0 24 24"><path d="M21.5 4.5L2.8 11.7c-.8.3-.8 1.4 0 1.7l4.6 1.5 1.8 5.6c.2.7 1.1.9 1.6.4l2.6-2.5 4.7 3.5c.6.4 1.4.1 1.6-.6l3-14.6c.2-.9-.7-1.6-1.5-1.2zM8 14.5l9.6-6"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="brand"><span class="brand-mark" aria-hidden="true">🥪</span><span>بوفه کارآفرینان و پویندگان</span></a>
+    <nav class="links" id="links" aria-label="منوی اصلی">
+      <a href="#home">خانه</a>
+      <a href="#reserve">رزرو</a>
+      <a href="#today">رزروهای امروز</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="باز کردن منو" aria-expanded="false" aria-controls="links">
+      <svg class="ic"><use href="#i-menu"/></svg>
+    </button>
+  </div>
+</header>
+
+<main>
+<section class="hero wrap" id="home">
+  <div class="hero-text">
+    <p class="chip"><svg class="ic"><use href="#i-clock"/></svg>رزرو هر روز از ساعت ۰۷:۳۰ تا ۱۳:۴۰</p>
+    <h1>ساندویچت رو رزرو کن،<br><span class="grad">قبل از اینکه تموم بشه!</span></h1>
+    <p class="lead">هر روز فقط ۲۰ ساندویچ برای رزرو آماده می‌شود. ساندویچت رو از قبل رزرو کن و بدون معطلی تحویل بگیر.</p>
+    <div class="cta">
+      <button class="btn btn-primary js-book" data-day="today">رزرو امروز</button>
+      <button class="btn btn-glass js-book" data-day="tomorrow">رزرو فردا</button>
+    </div>
+    <p class="notice" id="notice" role="status" hidden></p>
+  </div>
+
+  <div class="hero-visual">
+    <div class="plate">
+      <img class="hero-photo" id="heroPhoto" alt="ساندویچ بوفه" hidden>
+      <svg class="sandwich" id="sandwich" viewBox="0 0 320 280" role="img" aria-label="تصویر ساندویچ">
+        <defs>
+          <linearGradient id="bun" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffc766"/><stop offset="1" stop-color="#e08a2b"/></linearGradient>
+          <linearGradient id="bunB" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f0a947"/><stop offset="1" stop-color="#cf7a22"/></linearGradient>
+        </defs>
+        <ellipse cx="160" cy="258" rx="130" ry="14" fill="#000" opacity=".28"/>
+        <path d="M40 130c0-60 52-96 120-96s120 36 120 96z" fill="url(#bun)"/>
+        <g fill="#fff3d6" opacity=".9"><ellipse cx="110" cy="80" rx="7" ry="3.5" transform="rotate(-20 110 80)"/><ellipse cx="160" cy="66" rx="7" ry="3.5"/><ellipse cx="208" cy="84" rx="7" ry="3.5" transform="rotate(25 208 84)"/><ellipse cx="136" cy="102" rx="7" ry="3.5" transform="rotate(10 136 102)"/><ellipse cx="190" cy="108" rx="7" ry="3.5" transform="rotate(-15 190 108)"/></g>
+        <path d="M30 138q18 18 36 0t36 0 36 0 36 0 36 0 36 0 36 0 22 0v14H30z" fill="#4fd36b"/>
+        <rect x="42" y="150" width="236" height="20" rx="10" fill="#ff5a47"/>
+        <path d="M36 168h248l-22 22-26-12-26 12-26-12-26 12-26-12-26 12z" fill="#ffd23f"/>
+        <rect x="38" y="184" width="244" height="30" rx="15" fill="#7a3b22"/>
+        <path d="M40 212h240v14c0 14-12 22-26 22H66c-14 0-26-8-26-22z" fill="url(#bunB)"/>
+      </svg>
+    </div>
+    <div class="glass stock" aria-live="polite">
+      <span class="stock-label">موجودی امروز</span>
+      <strong class="stock-num" id="heroStock">—</strong>
+      <span class="stock-unit">عدد</span>
+    </div>
+  </div>
+</section>
+
+<section class="wrap block" id="reserve" aria-labelledby="h-status">
+  <div class="block-head">
+    <h2 id="h-status">وضعیت ظرفیت</h2>
+    <p class="muted" id="todayFa"></p>
+  </div>
+  <div class="grid-status">
+    <article class="glass status" id="statusCard" data-level="loading">
+      <div class="status-top">
+        <div>
+          <p class="muted">ساندویچ‌های امروز</p>
+          <p class="status-count"><strong id="stCount">—</strong><span id="stTotal"> / ۲۰</span></p>
+        </div>
+        <span class="badge" id="stBadge">در حال بارگذاری</span>
+      </div>
+      <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="20" id="bar"><span id="barFill"></span></div>
+      <p class="status-msg" id="stMsg"></p>
+      <button class="btn btn-primary btn-block js-book" data-day="today">رزرو امروز</button>
+    </article>
+    <article class="glass status tomorrow" id="tomCard">
+      <div class="status-top">
+        <div>
+          <p class="muted">ساندویچ‌های فردا</p>
+          <p class="status-count"><strong id="tmCount">—</strong><span> / ۲۰</span></p>
+        </div>
+        <span class="badge" id="tmBadge">در حال بارگذاری</span>
+      </div>
+      <div class="bar" id="tmBar"><span id="tmFill"></span></div>
+      <p class="muted" id="tomFa"></p>
+      <button class="btn btn-glass btn-block js-book" data-day="tomorrow">رزرو برای فردا</button>
+    </article>
+  </div>
+</section>
+
+<section class="wrap block" id="today" aria-labelledby="h-list">
+  <div class="block-head">
+    <h2 id="h-list">چه کسانی امروز رزرو کردند؟</h2>
+    <p class="muted" id="listCount"></p>
+  </div>
+  <div class="people" id="people" aria-live="polite"></div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <p class="foot-main">ساخته شده با دقت برای تجربه‌ای ساده‌تر در بوفه مدرسه</p>
+    <a class="maker glass" href="https://t.me/tavakoli_pr" target="_blank" rel="noopener noreferrer">
+      <span class="maker-ic"><svg class="ic"><use href="#i-telegram"/></svg></span>
+      <span class="maker-txt">
+        <small>برای پروژه‌های خفن‌تر و طراحی‌های اختصاصی</small>
+        <b>با سازنده سایت در تماس باشید</b>
+      </span>
+      <span class="maker-id" dir="ltr">@tavakoli_pr</span>
+    </a>
+  </div>
+</footer>
+
+<div class="modal" id="modal" hidden>
+  <div class="backdrop" data-close></div>
+  <div class="sheet glass-strong" role="dialog" aria-modal="true" aria-labelledby="mTitle" tabindex="-1">
+    <button class="x" data-close aria-label="بستن"><svg class="ic"><use href="#i-x"/></svg></button>
+
+    <form id="form" novalidate>
+      <h3 id="mTitle">رزرو امروز</h3>
+      <p class="muted" id="mDate"></p>
+
+      <div class="field" data-f="first_name">
+        <label for="fn">نام</label>
+        <input id="fn" name="first_name" autocomplete="given-name" maxlength="30" placeholder="مثلاً علی">
+        <p class="err" role="alert"></p>
+      </div>
+      <div class="field" data-f="last_name">
+        <label for="ln">نام خانوادگی</label>
+        <input id="ln" name="last_name" autocomplete="family-name" maxlength="30" placeholder="مثلاً رضایی">
+        <p class="err" role="alert"></p>
+      </div>
+
+      <fieldset class="field" data-f="grade">
+        <legend>پایه</legend>
+        <div class="chips" id="grades"></div>
+        <p class="err" role="alert"></p>
+      </fieldset>
+      <fieldset class="field" data-f="field" id="fieldSet" disabled>
+        <legend>رشته</legend>
+        <div class="chips" id="fields"></div>
+        <p class="hint" id="fieldHint">ابتدا پایه را انتخاب کنید.</p>
+        <p class="err" role="alert"></p>
+      </fieldset>
+
+      <p class="form-err" id="formErr" role="alert" hidden></p>
+      <button class="btn btn-primary btn-block" id="submit" type="submit" disabled>
+        <span class="spin" aria-hidden="true"></span><span id="submitTxt">ثبت رزرو</span>
+      </button>
+    </form>
+
+    <div class="success" id="success" hidden>
+      <div class="tick" aria-hidden="true">
+        <svg viewBox="0 0 24 24" class="tick-svg"><circle cx="12" cy="12" r="10.5"/><path d="M6.8 12.6l3.6 3.6 6.8-7.4"/></svg>
+      </div>
+      <h3>رزرو با موفقیت ثبت شد</h3>
+      <dl class="recap" id="recap"></dl>
+      <button class="btn btn-primary btn-block" data-close>بازگشت به صفحه اصلی</button>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts" aria-live="polite"></div>
+<script src="/app.js"></script>
+</body>
+</html>
